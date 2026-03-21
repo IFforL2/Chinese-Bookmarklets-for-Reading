@@ -1,0 +1,6 @@
+/********************This is a Traditional Mandarin Font with Hanyu Pinyin and polyphones*****************/
+
+@font-face {
+  font-family: 'Pinyin01';
+  src: url('ToneOZ-Pinyin-Kai-Traditional.woff') format('woff');
+}
