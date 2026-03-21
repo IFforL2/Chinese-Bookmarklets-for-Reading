@@ -1,0 +1,167 @@
+/********************You can put Google fonts and other web fonts here. (Remove slash and asterisk.)*****************/
+@import url('https://playtextadventures.com/games/rP-I7PCmZE2wyGTbZiRD1w/1/Fonts/style.css');
+@import url('https://playtextadventures.com/games/D29NisSJl02Mx7XUuhekYA/1/FontsP/style.css');
+/***@import url(//db.onlinewebfonts.com/c/7cc6719bd5f0310be3150ba33418e72e?family=Comic+Sans+MS);***/
+/***@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');***/
+/***@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');***/
+/***@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');***/
+/***@import url('http://fonts.cdnfonts.com/css/sweetie-pie');***/
+/***@import url(//db.onlinewebfonts.com/c/6fcadbafe6e2c14076f22e3f71cadb5f?family=My+Kids+Handwritten-Basic)***/
+/***@import url(//db.onlinewebfonts.com/c/5ab304ade0d4f62d027d12464ca69443?family=Apple+Color+Emoji)***/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Emoji:wght@300..700&family=Noto+Sans+Egyptian+Hieroglyphs&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Math&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300&display=swap');
+
+
+
+
+
+a.squiffy-link/****This controls the appearance of all links.****/
+{
+    text-decoration: none; /***This controls the underline of the links.****/
+    color: blue;
+    cursor: pointer;
+}
+a[data-rotate] /****This controls the appearance of rotate links.****/
+{
+    text-decoration: none; 
+    color: red;
+    cursor: url(ROTATE.png), pointer;
+}
+a[data-rotate]:hover{
+  color: coral;
+}
+a[data-sequence] /****This controls the appearance of sequence links.****/
+{
+    text-decoration: none; 
+    color: pink;
+    cursor: pointer;
+}
+
+[data-title]:hover:after {	/****This is better than "title"tooltips.*****/
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+
+[data-title]:after {
+    content: attr(data-title);
+    background-color: Cornsilk;
+    color: #111;
+    font-size: 100%;
+    font-family: Zhuyin01;
+    position: absolute;
+    padding: 1px 5px 2px 5px;
+    top: -1.6em;
+    left: 100%;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px #222222;
+    opacity: 0;
+    border: 1px solid #111111;
+    z-index: 99999;
+    visibility: hidden;
+}
+[data-title] {
+    position: relative;
+}
+
+a.link-section /****This controls the appearance of section links.****/
+{
+    text-decoration: none; 
+    color: green;
+    cursor: pointer;
+}
+a.link-section:hover{
+  color: lightgreen;
+}
+a.link-passage /****This controls the appearance of passage links.****/
+{
+    text-decoration: none; 
+    color: lime;
+    cursor: pointer;
+}
+a.link-passage:hover{
+   color: greenyellow;
+}
+a.squiffy-link.disabled
+{
+    text-decoration: inherit;
+    color: inherit !important;
+    cursor: inherit;
+}
+a.squiffy-header-link /****This controls the appearance of the "Restart" link.****/
+{
+    text-decoration: solid;
+    color: blue;
+    cursor: pointer;
+}
+div#squiffy-container
+{
+    color: white;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif
+}
+div#squiffy-header	/****This controls the size and position of the "Restart" link.****/
+{
+    font-size: 14px;
+    text-align: right;
+}
+div#squiffy /****This controls the text color, size, and font of section and passage texts.****/
+{
+    color: black;
+    font-size: 14px;
+    font-family: 'PrintClearly', 'KaiTi', 'Noto Color Emoji', sans-serif;
+
+}
+hr {			/****This controls spacing and color of the border between sections and passages after clicking a link.****/
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 16px; margin-bottom: 16px;
+}
+
+body {
+    background-color: white; 	/****This controls the color of the larger background of the game.******/
+}
+
+input {			/****This controls the appearance of <input/> boxes.****/
+  width: 20%;
+  padding: 0px 1px;
+  margin: 0px 0;
+  box-sizing: border-box;
+  background-color:transparent; 
+  border:none; 
+  border-bottom: solid;
+  color:black;
+  font-size: inherit;
+  font-family: inherit;
+  }
+  input:focus {
+  background-color:transparent; 
+  outline:none; 
+  }
+
+textarea {			/****This controls the appearance of <textarea> boxes.****/
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color:white; 
+  border:solid; 
+  border-bottom: solid;
+  color: black;
+  font-size: 14px;
+  font-family: sans-serif
+  }
+  input:focus {
+  background-color:white; 
+  outline:none; 
+  }
+
+::selection {
+  background: yellow;
+}
