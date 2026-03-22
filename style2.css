@@ -4,3 +4,7 @@
   font-family: 'Pinyin01';
   src: url('ToneOZ-Pinyin-Kai-Traditional.woff') format('woff');
 }
+@font-face {
+  font-family: 'PrintClearly';
+  src: url('PrintClearly-GGP.ttf') format('truetype');
+}
