@@ -6,5 +6,5 @@
 }
 @font-face {
   font-family: 'PrintClearly';
-  src: url('PrintClearly-GGP.ttf') format('truetype');
+  src: url('PrintClearly-GGP.woff') format('woff');
 }
