@@ -12,7 +12,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Math&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300&display=swap');
 
-
+@font-face {
+  font-family: 'Pinyin01';
+  src: url('ToneOZ-Pinyin-Kai-Traditional.woff') format('woff');
+}
+@font-face {
+  font-family: 'PrintClearly';
+  src: url('PrintClearly.woff') format('woff');
+}
 
 
 
