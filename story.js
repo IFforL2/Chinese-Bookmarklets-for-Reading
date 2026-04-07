@@ -339,7 +339,7 @@ var squiffy = {};
                 this.disabled = true;
 	    });
 
-	    }
+	    };
 
         var sectionCount = squiffy.get('_section-count') + 1;
         squiffy.set('_section-count', sectionCount);
