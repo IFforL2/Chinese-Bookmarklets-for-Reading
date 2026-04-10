@@ -852,7 +852,7 @@ squiffy.story.sections = {
 	},
 	'next box': {
 		'text': "<textarea id =\"story\" style=\"width:100%\"></textarea>\n\n<p><a class=\"squiffy-link link-section\" data-section=\"Text Analysis\" role=\"link\" tabindex=\"0\">Text Analysis</a></p>\n<ol start=\"9\">\n<li>You can also use this bookmarklet to get a less detailed <a href=\"{TextAnalysis}\">Text Analysis</a> after clicking the &quot;My Characters&quot; bookmarklet.</li>\n</ol>",
-		'attributes': ["TextAnalysis2 =  : 0; var hours = Math.floor(totalMinutes / 60); var minutes = Math.round(totalMinutes % 60); var readingTime = (chineseCharCount > 0) ? (hours + %22 hour%22 + (hours !== 1 ? %22s%22 : %22%22) + %22, %22 + minutes + %22 minutes%22) : %22N/A%22; alert(%22Chinese Characters: %22 + chineseCharCount + %22\\nKnown Chars: %22 + knownCharCount + %22\\nReadability: %22 + readability + %22%\\nReading time: %22 + readingTime);})();","TextAnalysis := {TextAnalysis1}{CPM}{TextAnalysis2}"],
+		'attributes': ["TextAnalysis2 =  : 0; var hours = Math.floor(totalMinutes / 60); var minutes = Math.round(totalMinutes % 60); var readingTime = (chineseCharCount > 0) ? (hours + %22 hour%22 + (hours !== 1 ? %22s%22 : %22%22) + %22, %22 + minutes + %22 minutes%22) : %22N/A%22; alert(%22Chinese Characters: %22 + chineseCharCount + %22\\nKnown Characters: %22 + knownCharCount + %22\\nReadability: %22 + readability + %22%\\nReading time: %22 + readingTime);})();","TextAnalysis := {TextAnalysis1}{CPM}{TextAnalysis2}"],
 		'passages': {
 		},
 	},
