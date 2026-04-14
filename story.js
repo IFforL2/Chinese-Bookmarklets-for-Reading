@@ -1,4 +1,4 @@
-// Created with Squiffy 5.1.4
+// Created with Squiffy 5.1.3
 // https://github.com/textadventures/squiffy
 
 (function(){
@@ -675,11 +675,14 @@ squiffy.story.sections = {
 				'text': "",
 				'js': function() {
 					var textarea = document.createElement('textarea');
-					textarea.value = decodeURIComponent(get("FontPinyin"));
+					textarea.value = decodeURIComponent(get("FontPinyin")).replace(/&#(\d+);/g, function(match, number) { return String.fromCodePoint(number); });
 					document.body.appendChild(textarea);
 					textarea.select();
 					document.execCommand('copy');
 					document.body.removeChild(textarea);
+					//.replace(/&#(\d+);/g, function(match, number){ return String.fromCharCode(number); }) //Put this in later
+					
+					// Maybe here?? //textarea.value = decodeURIComponent(get("FontPinyin")).replace(/&#(\d+);/g, function(match, number) { return String.fromCharCode(number); });
 				},
 			},
 		},
